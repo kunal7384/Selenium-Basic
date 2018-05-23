@@ -14,6 +14,5 @@
 	<classpathentry kind="lib" path="F:/software/Selenium new jar/libs/httpcore-4.4.6.jar"/>
 	<classpathentry kind="lib" path="F:/software/Selenium new jar/libs/jna-4.1.0.jar"/>
 	<classpathentry kind="lib" path="F:/software/Selenium new jar/libs/jna-platform-4.1.0.jar"/>
-	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

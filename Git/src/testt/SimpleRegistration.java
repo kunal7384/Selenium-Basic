@@ -1,13 +1,10 @@
 package testt;
 
 import java.awt.AWTException;
-
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
-import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
-import org.omg.SendingContext.RunTime;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -22,7 +19,7 @@ public class SimpleRegistration {
 	
 	public static WebDriver driver;
 	
-	public static void main(String[] args) throws InterruptedException, AWTException, IOException {
+	public static void main(String[] args) throws InterruptedException, AWTException {
 		
 		driver= new ChromeDriver();
 		
@@ -90,10 +87,6 @@ WebElement dob2 =driver.findElement(By.xpath("//*[@id='yy_date_8']"));
 		WebElement Email =driver.findElement(By.xpath("//*[@id='email_1']"));
 		Email.sendKeys("user@gmail.com");
 		Email.sendKeys(Keys.TAB);
-		
-		WebElement file =driver.findElement(By.xpath("//*[@id='profile_pic_10']"));
-		file.click();
-		Runtime.getRuntime().exec("F:\\software\\AutoIt\\fileupload.exe");
 
 		WebElement des = driver.findElement(By.xpath("//*[@id='description']"));
 		des.sendKeys("Hello ");
