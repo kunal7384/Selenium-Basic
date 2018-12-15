@@ -19,8 +19,8 @@ public class StoaredCookiesInfo {
  {
 	 driver = new ChromeDriver();
 	 driver.get("http://18.218.123.45/");
-	 driver.findElement(By.xpath("//*[@name='username_or_email']")).sendKeys("sagar1");
-	 driver.findElement(By.xpath("//*[@name='login_password']")).sendKeys("password");
+	 driver.findElement(By.xpath("//*[@name='username_or_email']")).sendKeys("Enter userName");
+	 driver.findElement(By.xpath("//*[@name='login_password']")).sendKeys("Enter password");
 	 driver.findElement(By.xpath("//*[@name='commit']")).click();
 	 File file = new File("cookies.data");
 	 file.delete();
